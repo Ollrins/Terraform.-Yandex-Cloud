@@ -30,6 +30,10 @@
   <em>вывод значений ip-адресов команды terraform output </em>
 </p>
 
+## Задание 6
+
+https://github.com/Ollrins/Terraform.-Yandex-Cloud/tree/main/src
+
 ## Задание 7
 ```bash
 [Ollrins@localhost lab]$ terraform console

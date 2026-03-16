@@ -43,3 +43,9 @@
 "John is admin for production server based on OS ubuntu-20-04 with 10 vcpu, 40 ram and 4 virtual disks"
 >
 ```
+## Задание 8
+```bash
+> var.test[1]["dev2"][0]
+"ssh -o 'StrictHostKeyChecking=no' ubuntu@84.252.140.88"
+>
+```

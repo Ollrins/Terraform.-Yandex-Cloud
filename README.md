@@ -29,3 +29,15 @@
   <br>
   <em>вывод значений ip-адресов команды terraform output </em>
 </p>
+
+## Задание 7
+```bash
+[Ollrins@localhost lab]$ terraform console
+> local.test_list[1]
+"staging"
+> length(local.test_list)
+3
+> local.test_map["admin"]
+"John"
+>
+```

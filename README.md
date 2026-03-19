@@ -53,3 +53,20 @@ https://github.com/Ollrins/Terraform.-Yandex-Cloud/tree/main/src
 "ssh -o 'StrictHostKeyChecking=no' ubuntu@84.252.140.88"
 >
 ```
+
+
+Шаг 1: Создание сервисного аккаунта и ключа
+```bash
+# Создаем сервисный аккаунт
+yc iam service-account create --name terraform-sa --folder-id <ваш_folder_id>
+
+# Назначаем роль редактора сервисному аккаунту
+yc resource-manager folder add-access-binding <ваш_folder_id> \
+  --role editor \
+  --subject serviceAccount:<id_созданного_сервисного_аккаунта>
+
+# Создаем authorized ключ для сервисного аккаунта
+yc iam key create \
+  --service-account-name terraform-sa \
+  --output /home/Ollrins/key.json
+```
